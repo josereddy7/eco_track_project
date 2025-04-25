@@ -25,7 +25,8 @@ SECRET_KEY = 'md!mhx$_1yd1fd29w38_-4i9hu1p$2co@h@%b!@24!ojfjmkd$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['eco-track-project.onrender.com']
+
 
 
 # Application definition

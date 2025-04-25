@@ -5,6 +5,16 @@ from django.contrib.auth import login
 from .models import Activity
 from .forms import ActivityForm
 from collections import defaultdict
+from django.http import JsonResponse
+from .models import Activity
+
+def test_db(request):
+    try:
+        count = Activity.objects.count()
+        return JsonResponse({'status': 'success', 'activity_count': count})
+    except Exception as e:
+        return JsonResponse({'status': 'error', 'message': str(e)})
+
 
 def register(request):
     if request.method == 'POST':

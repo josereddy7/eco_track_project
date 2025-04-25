@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'eco_track_db',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            'host': 'mongodb+srv://jose:1rphlzC2FnPc5eg5@test.31py3dd.mongodb.net/eco_track_db?retryWrites=true&w=majority'
+            'host': 'mongodb+srv://josereddy:1rphlzC2FnPc5eg5@test.31py3dd.mongodb.net/eco_track_db?retryWrites=true&w=majority',
         }
     }
 }

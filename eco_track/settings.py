@@ -48,6 +48,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  
+
 ]
 
 ROOT_URLCONF = 'eco_track.urls'
@@ -80,7 +82,7 @@ DATABASES = {
         'NAME': 'eco_track_db',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            'host': 'mongodb://localhost:27017',
+            'host': 'mongodb+srv://jose:varun4969@test.31py3dd.mongodb.net/eco_track_db?retryWrites=true&w=majority'
         }
     }
 }
@@ -126,5 +128,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 
